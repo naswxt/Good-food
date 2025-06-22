@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Суші та Піца</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1> Суші та  Піца</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Головна</a>
+            <a href="{{ url_for('show_menu') }}">Меню</a>
+            <a href="{{ url_for('show_cart') }}">Кошик</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Магазин Суші та Піци</p>
+    </footer>
+</body>
+</html>
