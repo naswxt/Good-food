@@ -1,4 +1,4 @@
-document.addEventListener("DOMCContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
 product_data = {
     1: {
             name: "Піца Маргарита",
@@ -8,7 +8,7 @@ product_data = {
         },
         2: {
             name: "Піца Пепероні",
-            img: "image/Піца Пепероні.jpg",
+            img: "image/Піца Пепероні .jpg",
             price: 250,
             about: "Тісто, томатний соус, гостра салямі пепероні, сир Моцарелла"
         },
@@ -26,7 +26,7 @@ product_data = {
         },
         5: {
             name: "Піца Чотири Сири",
-            img: "image/Піцка Чотири Сири.jpg",
+            img: "image/Піца Чотири Сири.jpg",
             price: 190,
             about: "Тісто, сир Моцарелла, сир Пармезан, сир з блакитною пліснявою, сир Гауда"
         },
