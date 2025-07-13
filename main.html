@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="image/food.jpg">
+                <div class="logo-name">Italy&Japan</div>
+            </div>
+            <div class="menu">
+                <a href="#catalog">Каталог</a>
+                <a href="#sale">Акції</a>
+                <a href="#about">Про нас</a>
+            </div>
+            <div class="basket">
+                <div class="count-buy"></div>
+                <img src="image/basket.png">
+            </div>
+        </header>
+
+        <main>
+            <section class="catalog" id="catalog"></section>
+            <div id="sale"><img src="image/Піца Маргарита.png"></div>
+            <div id="about">ПРО НАС</div>
+
+        </main>
+
+        <footer>
+
+            <img src="image/Instagram.jpg" width="50px" height="50px">
+        </footer>
+        <script src="script.js"></script>
+        <script>
+            let countBuy = document.querySelector(".count-buy")
+            if (localStorage.lenght == 0){
+                countBuy.innerHTML = ""
+            } else{
+                let count = 0
+                for (let key in localStorage){
+                    if (localStorage.hasOwnProperty(key)){
+                    let temp = JSON.parse(localStorage.getItem(key) || "{}") 
+                    count += temp["count"]   
+                    }}
+                    countBuy.innetText = count.toString()
+            }
+
+            
+        </script>
+    </body>
+</html>
